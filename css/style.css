@@ -1,0 +1,58 @@
+:root {
+    --yellow: yellow;
+    --orange: orange;
+    --red: red;
+    --black: black;
+}
+
+html {
+    box-sizing: border-box;
+    font-weight: 900;
+    color: var(--red);
+}
+
+body {
+    background: linear-gradient(to right, var(--orange), var(--black));
+    margin: 20px;
+}
+
+.top {
+    display: grid;
+    gap: 20px;
+    grid-template-areas: 
+    "party party cta1"
+    "party party cta2"
+}
+
+.party {
+    grid-area: party;
+    min-height: 450px;
+    background-image: url('../img/pexels-photo-619418.jpeg');
+    background-size: cover;
+    background-position: right;
+}
+
+.cta {
+    background: var(--yellow);
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+}
+
+.cta1 {
+    grid-area: cta1;
+}
+
+.cta2 {
+    grid-area: cta2;
+}
+
+.price {
+    font-size: 3.5rem;
+    font-weight: 300;
+}
+
+.cta p {
+    margin: 0;
+}
