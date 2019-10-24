@@ -96,7 +96,7 @@
     <script>
         const menuButton = document.querySelector('button[aria-expanded]');
         
-        function toggleMenu(target){
+        function toggleMenu({target}){
             const expanded = target.getAttribute('aria-expanded') === 'true' || false;
             menuButton.setAttribute('aria-expanded', !expanded);
             console.log("Toggled!");
